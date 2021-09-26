@@ -1,7 +1,7 @@
 {
   "name": "sass.js",
   "version": "0.11.1",
-  "libsass": "3.6.2",
+  "libsass": "3.6.5",
   "title": "Sass.js - API for emscripted libsass",
   "description": "Sass.js is a convenience API for the JavaScript libsass (compiled with Emscripten)",
   "homepage": "http://medialize.github.com/sass.js/",
