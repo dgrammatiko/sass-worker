@@ -16,11 +16,11 @@ module.exports = function(grunt) {
   grunt.registerTask('libsass:prepare', ['shell:prepareLibsass']);
   grunt.registerTask('libsass:build', [
     'shell:buildLibsass',
-    'mkdir:dist',
+    // 'mkdir:dist',
   ]);
   grunt.registerTask('libsass:debug', [
     'shell:buildLibsassDebug',
-    'mkdir:dist',
+    // 'mkdir:dist',
   ]);
 
   // concatenate source files and libsass.js
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
   // full build pipeline
   grunt.registerTask('build', [
     'clean:dist',
-    'mkdir:dist',
+    // 'mkdir:dist',
     'libsass:prepare',
     'versions',
     'libsass:build',
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('build:debug', [
     'clean:dist',
-    'mkdir:dist',
+    // 'mkdir:dist',
     'libsass:prepare',
     'versions',
     'libsass:debug',
